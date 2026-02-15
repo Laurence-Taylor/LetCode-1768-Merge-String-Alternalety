@@ -6,13 +6,13 @@ class Solution:
 
     def mergeAlternately(self, word1: str, word2: str) -> str:
         if len(word1) == len(word2):
-            merged_word = mergeAlternatelyIqualLenght(word1, Word2)
+            merged_word = self.mergeAlternatelyIqualLenght(word1, word2)
         elif len(word1) > len(word2):
-            merged_word = mergeAlternatelyIqualLenght(word1[:len(word2)], Word2) + word1[len(word2):]
+            merged_word = self.mergeAlternatelyIqualLenght(word1[:len(word2)], word2) + word1[len(word2):]
         else:
-            merged_word = mergeAlternatelyIqualLenght(word1, Word2[:len(word1)]) + word2[len(word1):]
+            merged_word = self.mergeAlternatelyIqualLenght(word1, word2[:len(word1)]) + word2[len(word1):]
         return merged_word
 
 if __name__ == '__main__':
      ej = Solution()
-     ej.mergeAlternately("Hola","POPO")
+     print(ej.mergeAlternately("Hola","POPOololo"))
