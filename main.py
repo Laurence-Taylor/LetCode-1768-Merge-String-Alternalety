@@ -1,8 +1,10 @@
 class Solution:
+    # Function to merge words of iqual lenght
     def mergeAlternatelyIqualLenght(self, word1: str, word2: str) -> str:
         merged_word = ''
         for i in range(len(word1)):
             merged_word += word1[i] + word2[i]
+        return merged_word
 
     def mergeAlternately(self, word1: str, word2: str) -> str:
         if len(word1) == len(word2):
